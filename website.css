@@ -167,7 +167,7 @@ header {
 }
 
 .trial__head {
-    width: 370px;
+    width: 100%;
     margin: 15px 0 0 0;
     font-family: Open Sans;
     font-style: normal;
@@ -218,7 +218,7 @@ header {
 }
 
 .trial__button {
-    width: 370px;
+    width: 100%;
     height: 54px;
     background-color: #EC7979;
     border-radius: 0 0 8px 8px;
@@ -237,7 +237,7 @@ header {
 }
 
 .media-area {
-    width: 365px;
+    width: 100%;
 }
 
 .media-area__name {
@@ -252,7 +252,7 @@ header {
 }
 
 .media-area__text {
-    width: 100%;
+    width: 365px;
     height: 38px;
     font-family: Open Sans;
     font-style: normal;
@@ -353,6 +353,7 @@ header {
     text-transform: uppercase;
     color: #86878B;
     margin-top: 58px;
+    margin-bottom: 89px;
 }
 
 .features-text__button {
@@ -361,7 +362,6 @@ header {
     background: #EC7979;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    margin-top: 89px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -664,7 +664,7 @@ header {
 }
 
 .description {
-    height: 326px;
+    height: 100%;
     background: url("Icons/background.png") no-repeat;
     background-size: cover;
     text-align: center;
@@ -672,7 +672,7 @@ header {
 
 .page-header__overlay {
     width: 100%;
-    height: 326px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.65);
     display: flex;
     align-items: center;
@@ -683,6 +683,7 @@ header {
     width: 100%;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 58px;
 }
 
 .description__line_description {
@@ -708,6 +709,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 38px;
 }
 
 .transparent-button__name {
@@ -973,6 +975,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .features-frames {
         width: 100%;
@@ -986,5 +989,24 @@ footer {
     .features-text__description {
         margin-top: 30px;
         justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .trial {
+        width: 100%;
+    }
+    .media-area__text {
+        width: 100%;
+    }
+    .media-panel {
+        width: 85%;
+    }
+    .features-text__button {
+        margin-top: 89px;
+    }
+    .footer-img {
+        width: 85%;
     }
 }
